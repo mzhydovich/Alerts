@@ -1,8 +1,8 @@
 FROM python:3.8
 
-WORKDIR /alert_image
-
-COPY . /alert_image
+COPY ./src ./
+COPY ./config.json ./
+COPY ./requirements.txt ./
 
 RUN pip install -r requirements.txt
 
